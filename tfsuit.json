@@ -1,0 +1,54 @@
+{
+    "vars": {
+      "naming_conventions": {
+        "match_pattern": "\"[a-z0-9_]+\"",
+        "exact": null,
+        "ignore": {
+          "match_pattern": null,
+          "exact": [
+            "route53_domain",
+            "tags"
+          ]
+        }
+      },
+      "line_breaks": {
+        "blank_lines_above": 1,
+        "blank_lines_below": 1
+      }
+    },
+    "outputs": {
+      "naming_conventions": {
+        "match_pattern": "\"[a-z0-9_]+\"",
+        "exact": null,
+        "ignore": null
+      },
+      "line_breaks": null
+    },
+    "blocks": {
+      "line_breaks": {
+        "blank_lines_above": 1,
+        "blank_lines_below": 1
+      }
+    },
+    "resources": {
+      "naming_conventions": {
+        "match_pattern": "",
+        "exact": null,
+        "ignore": null
+      }
+    },
+    "modules": {
+      "naming_conventions": {
+        "match_pattern": "",
+        "exact": null,
+        "ignore": null
+      }
+    },
+    "files": {
+      "naming_conventions": {
+        "match_pattern": "",
+        "exact": null,
+        "ignore": null
+      }
+    }
+}

@@ -5,7 +5,7 @@ locals {
 }
 
 module "task_definition" {
-  source = "github.com/cristhianlizcano9210/MODULE-AWS-ECS-IAC?ref=v1.0.0"
+  source = "github.com/cristhianlizcano9210/MODULE-AWS-ECS-IAC?ref=v1.0.1"
 
   create_task_definition  = var.create_ecs
   family_name             = var.family_name
@@ -22,7 +22,7 @@ module "task_definition" {
 }
 
 module "service" {
-  source = "github.com/cristhianlizcano9210/MODULE-AWS-ECS-IAC?ref=v1.0.0"
+  source = "github.com/cristhianlizcano9210/MODULE-AWS-ECS-IAC?ref=v1.0.1"
 
   create_service                              = var.create_ecs
   service_name                                = var.service_name
@@ -60,7 +60,7 @@ module "service" {
 }
 
 module "ecr" {
-  source = "github.com/cristhianlizcano9210/MODULE-AWS-ECR-IAC?ref=v1.0.0"
+  source = "github.com/cristhianlizcano9210/MODULE-AWS-ECR-IAC?ref=v1.0.1"
   
 
   create               = var.create_ecs
@@ -163,7 +163,7 @@ resource "aws_security_group" "this" {
 }
 
 module "role_ecs" {
-  source = "github.com/cristhianlizcano9210/MODULE-AWS-IAM-IAC?ref=v1.0.0"
+  source = "github.com/cristhianlizcano9210/MODULE-AWS-IAM-IAC?ref=v1.0.1"
 
   create_role                = var.create_role
   role_requires_mfa          = false

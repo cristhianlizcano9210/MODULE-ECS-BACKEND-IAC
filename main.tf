@@ -60,7 +60,7 @@ module "service" {
 }
 
 module "ecr" {
-  source = "github.com/cristhianlizcano9210/MODULE-AWS-ECR-IAC?ref=v1.0.1"
+  source = "github.com/cristhianlizcano9210/MODULE-AWS-ECR-IAC?ref=v1.0.2"
   
 
   create               = var.create_ecs
